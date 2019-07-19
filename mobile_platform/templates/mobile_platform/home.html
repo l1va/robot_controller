@@ -1,0 +1,102 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'mobile_platform/base.css' %}">
+        <title> Robot </title>
+    </head>
+    <body>
+        <div class="container-fluid full d-flex flex-column justify-content-between">
+            <div class="row" id="header">
+                <div class="col p-0">
+                    <nav class="navbar navbar-expand navbar-light bg-light">
+                        <a class="navbar-brand" >
+                            <h3> Mobile Platform </h3>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" >
+                <div class="row p-1">
+                    <div class="col-auto">
+                        <div class="row text-center justify-content-center">
+                                <b class="text-center" >Throttle</b>
+                            </div>
+
+                        <div class="row d-flex flex-column btn-group-vertical p-3">
+                            <button type="button" class="btn btn-outline-dark btn-lg p-2" id="ctrl">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark btn" disabled>
+                                <b id="throttle">0</b>
+                            </button>
+                            <button type="button" class="btn btn-outline-dark btn-lg" id="shift">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="container p-0">
+
+                            <div class="row text-center justify-content-center">
+                                <b class="text-center" >Control</b>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-dark btn-lg" id="up">
+                                        <i class="fas fa-arrow-up"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="col pr-2 py-2">
+                                    <button type="button" class="btn btn-outline-dark btn-lg" id= "left">
+                                        <i class="fas fa-arrow-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col pl-2 py-2">
+                                    <button type="button" class="btn btn-outline-dark btn-lg" id="right">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-outline-dark btn-lg" id="down">
+                                        <i class="fas fa-arrow-down"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" id="footer">
+                <footer class="col p-0 page-footer font-small unselectable">
+                    <div class="footer-copyright text-center bg-light py-3 ">© 2019 Copyright:
+                        <a href="https://t.me/realnigger" target="_blank"> Erg Noor</a>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <script src="{% static 'mobile_platform/controller.js' %}"></script>
+    </body>
+</html>

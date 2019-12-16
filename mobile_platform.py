@@ -21,7 +21,7 @@ def mul(iterable):
     return reduce(op.mul, iterable, 1)
 
 
-HOST = '91.240.85.227'  # The server's hostname or IP address
+HOST = 'l1va-mobile-platform.herokuapp.com'  # The server's hostname or IP address
 PORT = 27719  # The port used by the server
 
 throttle = 0

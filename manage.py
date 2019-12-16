@@ -10,10 +10,11 @@ import pipes
 
 PORT = 27719
 #IP = '192.168.0.104'
-
+import datetime
 
 def socket_server(pipe, pipe_throttle):
     print('socket server is set up and running')
+
     try:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.bind(('', PORT))

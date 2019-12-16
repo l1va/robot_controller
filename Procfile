@@ -1,1 +1,1 @@
-web: gunicorn robot.wsgi --log-file -
+web: gunicorn robot.wsgi --config config.py

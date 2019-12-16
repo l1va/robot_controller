@@ -9,7 +9,7 @@ from multiprocessing import Process
 import pipes
 
 PORT = 27719
-IP = '192.168.0.104'
+#IP = '192.168.0.104'
 
 
 def socket_server(pipe, pipe_throttle):
@@ -36,9 +36,9 @@ def socket_server(pipe, pipe_throttle):
                         print(e.errno)
     except Exception as e:
         time.sleep(1)
+        print(e)
         socket_server(pipe, pipe_throttle)
         print('oops')
-
 
 def main_():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'robot.settings')

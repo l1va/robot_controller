@@ -1,1 +1,1 @@
-web: python manage.py runserver --noreload
+web: gunicorn robot.wsgi --log-file -

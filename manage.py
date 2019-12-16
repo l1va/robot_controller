@@ -54,7 +54,7 @@ def main_():
 
 
 if __name__ == '__main__':
-    #pipes.init()
-    #process = Process(target=socket_server, args=(pipes.pipe_child, pipes.pipe_throttle_child))
-    #process.start()
+    pipes.init()
+    process = Process(target=socket_server, args=(pipes.pipe_child, pipes.pipe_throttle_child))
+    process.start()
     main_()
